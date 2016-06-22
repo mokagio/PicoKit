@@ -19,14 +19,14 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.9'
 
   ### Subspecs
-  
+
   s.subspec 'Core' do |cs|
     cs.source_files	= 'Pod/Core', 'Pod/Core/Converter', 'Pod/Core/Cache', 'Pod/Core/Schema', 'Pod/Core/XMLSupport'
     cs.dependency 	'PicoKit/XMLWriter'
     cs.dependency 	'PicoKit/OrderedDictionary'
     cs.dependency	'GDataXML-HTML', '~> 1.3.0'
   end
-  
+
   s.subspec 'WebService' do |wss|
     wss.source_files   	= 'Pod/WebService'
     wss.dependency 		'PicoKit/Soap'
